@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Harish Cybersecurity Portfolio - Aspiring SOC Analyst and VAPT Analyst" />
+  <title>Harish | Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="#home" class="logo">&lt;Harish/&gt;</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#labs">Labs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid container">
+        <div class="hero-copy">
+          <div class="profile-wrap"><img src="profile.png" alt="Harish profile photo" class="profile-photo"></div>
+          <p class="eyebrow">&gt; whoami</p>
+          <h1>Harish</h1>
+          <h2>Aspiring SOC Analyst & VAPT Analyst</h2>
+          <p class="hero-text">
+            Cybersecurity enthusiast building practical skills in SOC fundamentals,
+            web application security, network analysis, vulnerability assessment and
+            penetration testing through hands-on labs and CTF practice.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="resume.pdf" class="btn" target="_blank" rel="noopener">View Resume</a>
+            <a href="#contact" class="btn">Contact Me</a>
+          </div>
+
+          <div class="quick-tags" aria-label="Core skills">
+            <span>SOC</span><span>VAPT</span><span>Wireshark</span>
+            <span>Nmap</span><span>Burp Suite</span><span>Linux</span>
+          </div>
+        </div>
+
+        <div class="terminal-card">
+          <div class="terminal-top">
+            <span></span><span></span><span></span>
+            <small>harish@cyber-lab</small>
+          </div>
+          <div class="terminal-body">
+            <p><b>$</b> profile --summary</p>
+            <p class="terminal-output">Role: Entry-Level Cybersecurity</p>
+            <p class="terminal-output">Focus: SOC | VAPT | Web Security</p>
+            <p class="terminal-output">Practice: DVWA | CTF | Network Labs</p>
+            <p><b>$</b> status</p>
+            <p class="terminal-success">Ready to learn. Ready to defend.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <p class="section-kicker">01 / ABOUT</p>
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="about-card">
+          <p>
+            I am a B.Tech graduate focused on starting a career in cybersecurity,
+            especially in SOC Analyst and VAPT roles. I have practiced security
+            concepts in controlled lab environments using tools such as Burp Suite,
+            Wireshark, Nmap and Kali Linux.
+          </p>
+          <p>
+            My hands-on learning includes OWASP Top 10 vulnerabilities, web request
+            analysis, reconnaissance, enumeration, network traffic analysis,
+            incident response fundamentals, threat intelligence and MITRE ATT&CK.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <p class="section-kicker">02 / SKILLS</p>
+        <h2 class="section-title">Technical <span>Skills</span></h2>
+
+        <div class="card-grid">
+          <article class="skill-card">
+            <h3>SOC Fundamentals</h3>
+            <ul>
+              <li>SIEM Fundamentals</li>
+              <li>Incident Response</li>
+              <li>Threat Intelligence</li>
+              <li>MITRE ATT&CK</li>
+              <li>IOC Analysis</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3>VAPT</h3>
+            <ul>
+              <li>Reconnaissance</li>
+              <li>Enumeration</li>
+              <li>Authentication Testing</li>
+              <li>OWASP Top 10</li>
+              <li>Web Application Security</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3>Networking & Analysis</h3>
+            <ul>
+              <li>TCP/IP Basics</li>
+              <li>DNS & Firewalls</li>
+              <li>Wireshark</li>
+              <li>Nmap</li>
+              <li>Network Security</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3>Platforms & Tools</h3>
+            <ul>
+              <li>Kali Linux</li>
+              <li>Burp Suite</li>
+              <li>DVWA</li>
+              <li>VirtualBox</li>
+              <li>CTF Practice</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <p class="section-kicker">03 / PROJECTS</p>
+        <h2 class="section-title">Hands-on <span>Projects</span></h2>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-number">01</div>
+            <h3>DVWA Web Security Lab</h3>
+            <p>
+              Practiced common web application vulnerabilities in a deliberately
+              vulnerable local lab and analyzed requests using Burp Suite.
+            </p>
+            <div class="chips">
+              <span>DVWA</span><span>Burp Suite</span><span>OWASP</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-number">02</div>
+            <h3>Network Reconnaissance</h3>
+            <p>
+              Practiced host discovery, port scanning and service enumeration using
+              Nmap in authorized lab environments.
+            </p>
+            <div class="chips">
+              <span>Nmap</span><span>Recon</span><span>Enumeration</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-number">03</div>
+            <h3>Network Traffic Analysis</h3>
+            <p>
+              Used Wireshark to inspect packets, understand protocols and identify
+              useful traffic patterns during lab exercises.
+            </p>
+            <div class="chips">
+              <span>Wireshark</span><span>TCP/IP</span><span>Analysis</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-number">04</div>
+            <h3>CTF Practice</h3>
+            <p>
+              Solved beginner cybersecurity challenges involving encoding, web
+              security, Linux and basic cryptography.
+            </p>
+            <div class="chips">
+              <span>CTF</span><span>Linux</span><span>Security Labs</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="labs" class="section section-alt">
+      <div class="container">
+        <p class="section-kicker">04 / LAB EXPERIENCE</p>
+        <h2 class="section-title">DVWA <span>Lab Topics</span></h2>
+
+        <div class="lab-list">
+          <div>SQL Injection</div>
+          <div>Blind SQL Injection</div>
+          <div>Cross-Site Scripting (XSS)</div>
+          <div>CSRF</div>
+          <div>Command Injection</div>
+          <div>File Inclusion</div>
+          <div>File Upload</div>
+          <div>Weak Session IDs</div>
+          <div>Brute Force</div>
+        </div>
+
+        <p class="lab-note">
+          All security testing shown in this portfolio is performed only in
+          intentionally vulnerable or authorized lab environments for learning purposes.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact-wrap">
+        <p class="section-kicker">05 / CONTACT</p>
+        <h2 class="section-title">Let’s <span>Connect</span></h2>
+        <p class="contact-text">
+          I am interested in entry-level Cybersecurity, SOC Analyst and VAPT opportunities.
+        </p>
+
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="https://www.linkedin.com/in/harish-mamidisetty-918275190/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+          <a class="btn" href="mailto:harishsetty2000@gmail.com">Email</a>
+        </div>
+
+        <p class="edit-note">LinkedIn, email and resume are connected. GitHub can be added later when you share your profile URL.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Harish | Cybersecurity Portfolio</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
