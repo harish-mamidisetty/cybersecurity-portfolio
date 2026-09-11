@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DVWA Brute Force Lab | Harish Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo">&lt;Harish/&gt;</a>
+      <ul class="nav-links">
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="writeup-hero">
+      <div class="container">
+        <p class="section-kicker">PROJECT WRITE-UP / AUTHENTICATION SECURITY</p>
+        <h1>DVWA Brute Force Lab</h1>
+        <p class="writeup-subtitle">A controlled authentication lab comparing brute-force protections across DVWA security levels.</p>
+        <a href="index.html#projects" class="back-link">← Back to projects</a>
+      </div>
+    </section>
+
+    <section class="container writeup-layout">
+      <article class="writeup-content">
+        <h2>Objective</h2>
+<p>Understand how weak login defenses make repeated password guessing easier and how layered controls slow or stop automated attempts.</p>
+<h2>Lab Approach</h2>
+<ul><li>Captured and reviewed login requests using Burp Suite.</li><li>Compared response behavior and timing across security levels.</li><li>Observed the effect of request delays and anti-CSRF tokens.</li><li>Documented why consistent error messages and lockout controls matter.</li></ul>
+<h2>What I Learned</h2>
+<p>Authentication defenses should not depend on one control. Rate limiting, MFA, safe lockout behavior, monitoring and token validation work together.</p>
+<h2>Mitigation</h2>
+<ul><li>Apply rate limiting and progressive delays.</li><li>Use MFA for important accounts.</li><li>Monitor repeated failed logins.</li><li>Use consistent authentication error messages.</li><li>Protect state-changing flows with appropriate tokens.</li></ul>
+        <div class="callout">
+          This write-up documents practice performed only in an intentionally vulnerable or authorized lab environment.
+        </div>
+      </article>
+
+      <aside class="writeup-side">
+        <h3>Project Details</h3>
+        <div class="meta-row"><small>Environment</small><strong>Authorized Lab</strong></div>
+        <div class="meta-row"><small>Tools</small><strong>DVWA, Burp Suite</strong></div>
+        <div class="meta-row"><small>Skills</small><strong>Authentication Security, Rate Limiting, CSRF Tokens</strong></div>
+        <div class="meta-row"><small>Focus</small><strong>Learning & Defensive Understanding</strong></div>
+      </aside>
+    </section>
+  </main>
+
+  <footer><div class="container"><p>© 2026 Harish | Cybersecurity Portfolio</p></div></footer>
+</body>
+</html>

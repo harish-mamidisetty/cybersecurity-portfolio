@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DVWA File Upload Lab | Harish Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo">&lt;Harish/&gt;</a>
+      <ul class="nav-links">
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="writeup-hero">
+      <div class="container">
+        <p class="section-kicker">PROJECT WRITE-UP / WEB SECURITY</p>
+        <h1>DVWA File Upload Lab</h1>
+        <p class="writeup-subtitle">A controlled lab exercise focused on insecure file-upload validation and defensive upload design.</p>
+        <a href="index.html#projects" class="back-link">← Back to projects</a>
+      </div>
+    </section>
+
+    <section class="container writeup-layout">
+      <article class="writeup-content">
+        <h2>Objective</h2>
+<p>Understand why checking only a filename or MIME type is insufficient when accepting uploaded files.</p>
+<h2>Lab Approach</h2>
+<ul><li>Compared upload behavior across DVWA security levels.</li><li>Reviewed filename extension and MIME-type validation.</li><li>Observed the value of checking actual file content.</li><li>Considered safe storage and execution controls for uploads.</li></ul>
+<h2>What I Learned</h2>
+<p>Upload security requires layered validation. Even a valid-looking image type can be dangerous if executable content is stored where the web server can run it.</p>
+<h2>Mitigation</h2>
+<ul><li>Allow-list extensions and verify real file content.</li><li>Generate server-side filenames.</li><li>Store uploads outside executable web paths.</li><li>Set restrictive permissions and size limits.</li></ul>
+        <div class="callout">
+          This write-up documents practice performed only in an intentionally vulnerable or authorized lab environment.
+        </div>
+      </article>
+
+      <aside class="writeup-side">
+        <h3>Project Details</h3>
+        <div class="meta-row"><small>Environment</small><strong>Authorized Lab</strong></div>
+        <div class="meta-row"><small>Tools</small><strong>DVWA, Burp Suite, Browser</strong></div>
+        <div class="meta-row"><small>Skills</small><strong>File Upload Security, MIME Validation, Content Validation</strong></div>
+        <div class="meta-row"><small>Focus</small><strong>Learning & Defensive Understanding</strong></div>
+      </aside>
+    </section>
+  </main>
+
+  <footer><div class="container"><p>© 2026 Harish | Cybersecurity Portfolio</p></div></footer>
+</body>
+</html>

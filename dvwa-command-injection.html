@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DVWA Command Injection Lab | Harish Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo">&lt;Harish/&gt;</a>
+      <ul class="nav-links">
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="writeup-hero">
+      <div class="container">
+        <p class="section-kicker">PROJECT WRITE-UP / WEB SECURITY</p>
+        <h1>DVWA Command Injection Lab</h1>
+        <p class="writeup-subtitle">A controlled lab exercise focused on understanding how unsafe operating-system command handling can create serious security risk.</p>
+        <a href="index.html#projects" class="back-link">← Back to projects</a>
+      </div>
+    </section>
+
+    <section class="container writeup-layout">
+      <article class="writeup-content">
+        <h2>Objective</h2>
+<p>Understand how user-controlled input can reach operating-system commands in a deliberately vulnerable application and identify defensive controls that prevent it.</p>
+<h2>Lab Approach</h2>
+<ul><li>Reviewed how the application handled network utility input.</li><li>Observed differences in filtering across DVWA security levels.</li><li>Compared how separators and validation rules changed request behavior.</li><li>Focused on why direct command execution with user input is unsafe.</li></ul>
+<h2>What I Learned</h2>
+<p>The lab showed that blacklisting a few characters is fragile. Secure designs avoid shell execution where possible and strictly control allowed input.</p>
+<h2>Mitigation</h2>
+<ul><li>Avoid passing user input to shell commands.</li><li>Use safe APIs instead of invoking a shell.</li><li>Apply strict allow-list validation.</li><li>Run services with least privilege.</li></ul>
+        <div class="callout">
+          This write-up documents practice performed only in an intentionally vulnerable or authorized lab environment.
+        </div>
+      </article>
+
+      <aside class="writeup-side">
+        <h3>Project Details</h3>
+        <div class="meta-row"><small>Environment</small><strong>Authorized Lab</strong></div>
+        <div class="meta-row"><small>Tools</small><strong>DVWA, Burp Suite, Kali Linux</strong></div>
+        <div class="meta-row"><small>Skills</small><strong>Command Injection, Input Validation, Web Security</strong></div>
+        <div class="meta-row"><small>Focus</small><strong>Learning & Defensive Understanding</strong></div>
+      </aside>
+    </section>
+  </main>
+
+  <footer><div class="container"><p>© 2026 Harish | Cybersecurity Portfolio</p></div></footer>
+</body>
+</html>
