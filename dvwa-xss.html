@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DVWA XSS Lab | Harish Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo">&lt;Harish/&gt;</a>
+      <ul class="nav-links">
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="writeup-hero">
+      <div class="container">
+        <p class="section-kicker">PROJECT WRITE-UP / WEB SECURITY</p>
+        <h1>DVWA XSS Lab</h1>
+        <p class="writeup-subtitle">A controlled lab exercise covering cross-site scripting concepts and how unsafe handling of browser-rendered input can create security issues.</p>
+        <a href="index.html#projects" class="back-link">← Back to projects</a>
+      </div>
+    </section>
+
+    <section class="container writeup-layout">
+      <article class="writeup-content">
+        <h2>Objective</h2>
+<p>Understand how untrusted input can reach a browser response and why output encoding is essential for preventing script execution.</p>
+<h2>Lab Approach</h2>
+<ul><li>Reviewed reflected and stored input behavior in DVWA.</li><li>Observed where user input appeared in the rendered page.</li><li>Compared application behavior at different security levels.</li><li>Focused on the defensive role of context-aware output encoding.</li></ul>
+<h2>What I Learned</h2>
+<p>XSS is not only an input problem; the output context matters. HTML, attributes and JavaScript contexts require appropriate encoding and safe DOM APIs.</p>
+<h2>Mitigation</h2>
+<ul><li>Apply context-aware output encoding.</li><li>Prefer safe DOM methods instead of unsafe HTML insertion.</li><li>Use Content Security Policy as an additional defense.</li><li>Validate input but do not rely on validation alone.</li></ul>
+        <div class="callout">
+          This write-up documents practice performed only in an intentionally vulnerable or authorized lab environment.
+        </div>
+      </article>
+
+      <aside class="writeup-side">
+        <h3>Project Details</h3>
+        <div class="meta-row"><small>Environment</small><strong>Authorized Lab</strong></div>
+        <div class="meta-row"><small>Tools</small><strong>DVWA, Burp Suite, Browser DevTools</strong></div>
+        <div class="meta-row"><small>Skills</small><strong>XSS, Input Validation, Output Encoding</strong></div>
+        <div class="meta-row"><small>Focus</small><strong>Learning & Defensive Understanding</strong></div>
+      </aside>
+    </section>
+  </main>
+
+  <footer><div class="container"><p>© 2026 Harish | Cybersecurity Portfolio</p></div></footer>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DVWA CSRF Lab | Harish Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo">&lt;Harish/&gt;</a>
+      <ul class="nav-links">
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="writeup-hero">
+      <div class="container">
+        <p class="section-kicker">PROJECT WRITE-UP / WEB SECURITY</p>
+        <h1>DVWA CSRF Lab</h1>
+        <p class="writeup-subtitle">A hands-on DVWA exercise comparing CSRF defenses such as origin/referer checks and anti-CSRF tokens.</p>
+        <a href="index.html#projects" class="back-link">← Back to projects</a>
+      </div>
+    </section>
+
+    <section class="container writeup-layout">
+      <article class="writeup-content">
+        <h2>Objective</h2>
+<p>Understand how a browser can send authenticated requests on behalf of a logged-in user and how applications verify that sensitive actions are intentional.</p>
+<h2>Lab Approach</h2>
+<ul><li>Observed state-changing requests in the DVWA CSRF module.</li><li>Compared behavior when request-origin checks were present.</li><li>Reviewed the use of per-request or per-session anti-CSRF tokens.</li><li>Documented why token validation is stronger than relying only on headers.</li></ul>
+<h2>What I Learned</h2>
+<p>CSRF protection depends on proving user intent for sensitive actions. Tokens, SameSite cookies and origin validation work best as layered defenses.</p>
+<h2>Mitigation</h2>
+<ul><li>Use unpredictable anti-CSRF tokens.</li><li>Set appropriate SameSite cookie attributes.</li><li>Validate Origin/Referer where suitable.</li><li>Require re-authentication for highly sensitive actions.</li></ul>
+        <div class="callout">
+          This write-up documents practice performed only in an intentionally vulnerable or authorized lab environment.
+        </div>
+      </article>
+
+      <aside class="writeup-side">
+        <h3>Project Details</h3>
+        <div class="meta-row"><small>Environment</small><strong>Authorized Lab</strong></div>
+        <div class="meta-row"><small>Tools</small><strong>DVWA, Burp Suite, Browser</strong></div>
+        <div class="meta-row"><small>Skills</small><strong>CSRF, Session Security, Token Validation</strong></div>
+        <div class="meta-row"><small>Focus</small><strong>Learning & Defensive Understanding</strong></div>
+      </aside>
+    </section>
+  </main>
+
+  <footer><div class="container"><p>© 2026 Harish | Cybersecurity Portfolio</p></div></footer>
+</body>
+</html>

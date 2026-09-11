@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DVWA SQL Injection Lab | Harish Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo">&lt;Harish/&gt;</a>
+      <ul class="nav-links">
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="writeup-hero">
+      <div class="container">
+        <p class="section-kicker">PROJECT WRITE-UP / WEB SECURITY</p>
+        <h1>DVWA SQL Injection Lab</h1>
+        <p class="writeup-subtitle">A practical lab write-up focused on understanding how unsafe database queries can expose application data and how secure coding prevents the issue.</p>
+        <a href="index.html#projects" class="back-link">← Back to projects</a>
+      </div>
+    </section>
+
+    <section class="container writeup-layout">
+      <article class="writeup-content">
+        <h2>Objective</h2>
+<p>Understand how user-controlled input can influence a backend SQL query in a deliberately vulnerable application, then document the defensive lessons.</p>
+<h2>Lab Approach</h2>
+<ul><li>Captured and reviewed application requests in Burp Suite.</li><li>Observed how changing an input parameter affected the server response.</li><li>Compared behavior across DVWA security levels.</li><li>Documented how validation and safer database access reduce the risk.</li></ul>
+<h2>What I Learned</h2>
+<p>The exercise improved my understanding of request parameters, database-backed applications, error behavior and why parameterized queries are important.</p>
+<h2>Mitigation</h2>
+<ul><li>Use prepared statements / parameterized queries.</li><li>Validate input using allow-lists where appropriate.</li><li>Avoid exposing detailed database errors to users.</li><li>Apply least-privilege database permissions.</li></ul>
+        <div class="callout">
+          This write-up documents practice performed only in an intentionally vulnerable or authorized lab environment.
+        </div>
+      </article>
+
+      <aside class="writeup-side">
+        <h3>Project Details</h3>
+        <div class="meta-row"><small>Environment</small><strong>Authorized Lab</strong></div>
+        <div class="meta-row"><small>Tools</small><strong>DVWA, Burp Suite, Browser DevTools</strong></div>
+        <div class="meta-row"><small>Skills</small><strong>SQL Injection, HTTP Analysis, Web Security</strong></div>
+        <div class="meta-row"><small>Focus</small><strong>Learning & Defensive Understanding</strong></div>
+      </aside>
+    </section>
+  </main>
+
+  <footer><div class="container"><p>© 2026 Harish | Cybersecurity Portfolio</p></div></footer>
+</body>
+</html>
